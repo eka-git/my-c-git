@@ -1,0 +1,10 @@
+C:\Users\59727\source\repos\窗体计算器\窗体计算器\bin\Debug\窗体计算器.exe.config
+C:\Users\59727\source\repos\窗体计算器\窗体计算器\bin\Debug\窗体计算器.exe
+C:\Users\59727\source\repos\窗体计算器\窗体计算器\bin\Debug\窗体计算器.pdb
+C:\Users\59727\source\repos\窗体计算器\窗体计算器\obj\Debug\窗体计算器.csprojAssemblyReference.cache
+C:\Users\59727\source\repos\窗体计算器\窗体计算器\obj\Debug\窗体计算器.Form1.resources
+C:\Users\59727\source\repos\窗体计算器\窗体计算器\obj\Debug\窗体计算器.Properties.Resources.resources
+C:\Users\59727\source\repos\窗体计算器\窗体计算器\obj\Debug\窗体计算器.csproj.GenerateResource.cache
+C:\Users\59727\source\repos\窗体计算器\窗体计算器\obj\Debug\窗体计算器.csproj.CoreCompileInputs.cache
+C:\Users\59727\source\repos\窗体计算器\窗体计算器\obj\Debug\窗体计算器.exe
+C:\Users\59727\source\repos\窗体计算器\窗体计算器\obj\Debug\窗体计算器.pdb
