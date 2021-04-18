@@ -1,8 +1,9 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Text;
-
+using System.Xml.Serialization;
 namespace d1
 {
     [Serializable]
@@ -13,6 +14,39 @@ namespace d1
         public AllOrder()
         {
 
+        }
+public void export()
+        {
+            XmlSerializer a = new XmlSerializer(typeof(List<Order>));
+            using (FileStream b = new FileStream("order.xml", FileMode.Create))
+            {
+                a.Serialize(b, this.order);
+            }
+            Console.WriteLine("序列化完成");
+        }
+
+        public void import()
+        {
+            try
+            {
+                XmlSerializer a = new XmlSerializer(typeof(List<Order>));
+                using (FileStream b = new FileStream("order.xml", FileMode.Open))
+                {
+                    List<Order> c = (List<Order>)a.Deserialize(b);
+                    Console.WriteLine("反序列化结果：");
+                    foreach (Order d in c)
+                    {
+                        Console.WriteLine("订单号 客户 日期 总金额");
+                        Console.WriteLine("----------------------------");
+                        Console.WriteLine("{0} {1} {2} {3}", d.Id, d.Customer, d.Date, d.Money);
+                        d.showOrderItem();
+                    }
+                }
+            }
+            catch
+            {
+                Console.WriteLine("序列化系列操作错误");
+            }
         }
 
         public void ShowOrder()
